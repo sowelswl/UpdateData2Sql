@@ -21,7 +21,7 @@ def connect_to_database():
     print("连接到数据库...")
     # 数据库连接
     engine = sqlalchemy.create_engine(
-        f"mysql+pymysql://dev:{SQL_PASSWORDS}@{SQL_HOST}:3306/UpdatedData?charset=utf8"
+        f"mysql+pymysql://readonly:{SQL_PASSWORDS}@{SQL_HOST}:3306/intern?charset=utf8"
     )
     return engine
 
